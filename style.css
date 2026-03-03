@@ -1,0 +1,444 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #1e293b;
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #3b82f6;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.btn {
+  background: #3b82f6;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+/* Sections */
+section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+#features {
+  background: #1e293b;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card {
+  background: #0f172a;
+  padding: 30px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  background: #1e293b;
+  padding: 20px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+.card {
+  background: #0f172a;
+  padding: 30px;
+  border-radius: 10px;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.hero h1 {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+#contact {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* card around form */
+.contact-card {
+  background: rgba(17, 24, 39, 0.85);
+  padding: 40px 30px;
+  border-radius: 14px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+  max-width: 540px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* icon in heading */
+#contact .heading-icon {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+#contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;charset=UTF-8,%3Csvg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"%3E%3Ccircle fill="%233b82f6" cx="50" cy="50" r="50"/%3E%3C/svg%3E') repeat;
+  opacity: 0.03;
+  pointer-events: none; /* let clicks go through to form */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  background: #0f172a;
+  color: white;
+  font-size: 16px;
+  width: 100%;
+  position: relative;
+  z-index: 1; /* ensure above decorative overlay */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.3);
+}
+
+.contact-form button {
+  padding: 16px;
+  border: none;
+  border-radius: 6px;
+  background: #3b82f6;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+}
+
+.contact-form button:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* Heading underline for contact */
+#contact h2 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+#contact h2::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background: #3b82f6;
+  left: 25%;
+  bottom: -10px;
+}
+
+/* icon inside button */
+.contact-form .icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.contact-form .form-btn:hover .icon {
+  transform: translateX(4px);
+}
+
+/* bounce animation on heading icon */
+@keyframes bounceIcon {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+#contact .heading-icon {
+  animation: bounceIcon 2s infinite ease-in-out;
+}
+
+/* Telegram Section */
+#telegram {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f4ff5e 0%, #fff56a 100%);
+  text-align: center;
+  position: relative;
+}
+
+.telegram-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.telegram-container h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.telegram-container p {
+  margin-bottom: 25px;
+  color: #555;
+  font-size: 16px;
+}
+
+.telegram-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #37aee2 0%, #0088cc 100%);
+  color: rgb(255, 255, 255);
+  padding: 14px 26px;
+  margin: 10px;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 136, 204, 0.3);
+}
+
+.telegram-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.telegram-btn span.icon-animation {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;
+  padding: 4px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.telegram-btn:hover {
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 136, 204, 0.4);
+}
+
+.telegram-btn:active {
+  transform: scale(0.97);
+}
+
+/* icon movement */
+.telegram-btn:hover span.icon-animation {
+  transform: translateX(4px) rotate(10deg);
+}
+#blog {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f9fafb;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-post {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* individual post page */
+.post-header {
+  background: #1e293b;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.post-header h1 {
+  margin: 10px 0;
+  font-size: 36px;
+}
+
+.post-meta {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.post-content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.6;
+  color: #333;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.post-content p {
+  margin-bottom: 1em;
+}
+
+footer p {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.post-thumb {
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+}
+
+.blog-post h3 {
+  margin: 20px 20px 10px;
+}
+
+.blog-post p {
+  flex-grow: 1;
+  margin: 0 20px 20px;
+  color: #444;
+}
+
+.read-more {
+  margin: 0 20px 20px;
+  align-self: start;
+}
+
+.read-more.btn {
+  padding: 10px 18px;
+  font-size: 14px;
+}
