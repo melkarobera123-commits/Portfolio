@@ -505,7 +505,7 @@ footer p {
   padding: 60px 20px 28px;
   background:
     radial-gradient(circle at 12% 20%, rgba(250, 204, 21, 0.18), transparent 35%),
-    linear-gradient(155deg, #0b1324 0%, #1e3a8a 100%);
+    linear-gradient(155deg, #feffff 0%, #1e3a8a 100%);
   border-bottom: 1px solid rgba(148, 163, 184, 0.22);
 }
 
