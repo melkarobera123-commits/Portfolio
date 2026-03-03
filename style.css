@@ -353,7 +353,7 @@ footer {
 #blog {
   padding: 60px 20px;
   text-align: center;
-  background: #000000;
+  background: #3e3d8d;
   position: relative;
 }
 
@@ -479,7 +479,7 @@ footer p {
 }
 
 .read-more.btn:hover {
-  background: #fdfdff;
+  background: #000000;
   transform: translateY(-2px);
 }
 
