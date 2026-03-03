@@ -503,7 +503,10 @@ footer p {
 
 .blog-post-page .post-header {
   padding: 60px 20px 28px;
-  background: transparent;
+  background:
+    radial-gradient(circle at 12% 20%, rgba(250, 204, 21, 0.18), transparent 35%),
+    linear-gradient(155deg, #0b1324 0%, #1e3a8a 100%);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.22);
 }
 
 .blog-post-page .post-header h1 {
@@ -525,9 +528,10 @@ footer p {
 .blog-post-page .post-content {
   max-width: 840px;
   margin: 18px auto 48px;
-  background: rgba(15, 23, 42, 0.88);
+  background: rgba(15, 23, 42, 0.92);
   color: #f8fafc;
   border: 1px solid rgba(148, 163, 184, 0.18);
+  border-top: 3px solid #f59e0b;
   border-radius: 18px;
   padding: 34px 26px;
   box-shadow: 0 18px 44px rgba(2, 6, 23, 0.45);
@@ -542,7 +546,7 @@ footer p {
 }
 
 .blog-post-page .post-signoff {
-  color: #93c5fd;
+  color: #fbbf24;
   font-weight: 700;
   margin-top: 16px;
 }
@@ -550,5 +554,10 @@ footer p {
 .blog-post-page .read-more.btn {
   display: inline-block;
   margin: 12px 0 0;
+  background: #f59e0b;
   color: #fff;
+}
+
+.blog-post-page .read-more.btn:hover {
+  background: #ea580c;
 }
