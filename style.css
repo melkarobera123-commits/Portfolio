@@ -425,8 +425,8 @@ footer {
   margin: 40px auto;
   padding: 0 20px;
   line-height: 1.6;
-  color: #333;
-  background: rgb(14, 68, 243);
+  color: #000000;
+  background: rgb(254, 255, 255);
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
