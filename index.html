@@ -3,134 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="GWP MEDIAâ€™s personal site showcasing skills, contact options, and blog posts.">
-  <title>GWP MEDIA | SAGALICHI JIREENYADHA!</title>
+  <meta name="description" content="Personal landing page for Robera with background, skills, and blog notes.">
+  <title>Robera | About Me</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
 
-  <header>
+  <header class="site-header" id="top">
     <nav class="navbar" aria-label="Main navigation">
-      <a href="#home" class="brand" aria-label="Go to home">
-        <img src="GWP-MEDIA.png" alt="GWP MEDIA logo" class="site-logo">
-        <span class="logo-text">GWP-MEDIA</span>
-      </a>
+      <a href="#top" class="brand">Robera</a>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#features">Skills</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#blog">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#projects">Projects</a></li>
       </ul>
     </nav>
 
-    <section class="hero" id="home">
-      <h1>Akkam Jirtu?, Roobeeraan Jedhama ðŸ‘‹</h1>
-      <p><span lang="om">Waantota Miidiyaa fi Dijitaalummaa of Keessaa qaban keessatti hirmaachuun filannoo kooti.</span></p>
-      <a href="#contact" class="btn">Na Waliin hojjechuuf</a>
+    <section class="hero" id="about">
+      <div class="hero-copy">
+        <p class="hero-tag">ABOUT ME</p>
+        <h1>Hi, I am Robera Malkaa, a student and media-focused creator.</h1>
+        <p class="hero-intro">I enjoy building ideas around digital media, faith writing, and practical communication. This page is my personal landing page where I share who I am and what I am working on.</p>
+        <div class="hero-actions">
+          <a href="#blog" class="btn btn-primary">Read My Posts</a>
+          <a href="#contact" class="btn btn-ghost">Connect</a>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Profile quick facts">
+        <h2>Quick Facts</h2>
+        <ul>
+          <li><span>Name:</span> Robera Malkaa</li>
+          <li><span>Field:</span> Pharmacy Student (Year 3)</li>
+          <li><span>Focus:</span> Media + Writing</li>
+          <li><span>Base:</span> Jimma University</li>
+        </ul>
+      </aside>
     </section>
   </header>
 
   <main>
-    <section id="Waa'eeko">
-      <h2>Waa'eeko Waantota Sadi</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Amantiinko</h3>
-          <p><span lang="om">Kiristiyaana (Prooteestaantii).</span></p>
-        </div>
-        <div class="card">
-          <h3>Umuriinko</h3>
-          <p><span lang="om">20.</span></p>
-        </div>
-        <div class="card">
-          <h3>Kilaban Deeggaru</h3>
-          <p><span lang="om">Maanchistar Yuunaayitid.</span></p>
-        </div>
+    <section class="panel" id="skills">
+      <h2>What I Work On</h2>
+      <div class="grid cards-3">
+        <article class="card">
+          <h3>Faith Writing</h3>
+          <p>Short spiritual reflections and practical Bible-centered posts in Afaan Oromo and English.</p>
+        </article>
+        <article class="card">
+          <h3>Digital Media</h3>
+          <p>Creating clear, simple visuals and messaging for online communication and learning.</p>
+        </article>
+        <article class="card">
+          <h3>Personal Growth</h3>
+          <p>Continuous learning in study, discipline, and leadership through daily habits and goals.</p>
+        </article>
       </div>
     </section>
 
-    <section id="Kaayyoo">
-      <h2>Waantotan Fulduratti Hojjechuuf jedhu</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Kitaabota Dubbisuu</h3>
-          <p><span lang="om">Kitaabota Hafuuraa Baayyee Dubbisuu.</span></p>
-        </div>
-        <div class="card">
-          <h3>Nama Guddaa ta'uu</h3>
-          <p><span lang="om">Qaamaanis YaadaanisðŸ˜</span></p>
-        </div>
-        <div class="card">
-          <h3>Barruuwwan Qopheessuu</h3>
-          <p><span lang="om">Dhimma Hafuuraa irratti Barruuwwan garagaraa barreessuu.</span></p>
-        </div>
+    <section class="panel" id="story">
+      <h2>My Journey</h2>
+      <div class="timeline">
+        <article>
+          <h3>Identity</h3>
+          <p>I am a Christian and I care about living with purpose, discipline, and service.</p>
+        </article>
+        <article>
+          <h3>Education</h3>
+          <p>I study Pharmacy at Jimma University while investing in communication and media skills.</p>
+        </article>
+        <article>
+          <h3>Direction</h3>
+          <p>I plan to keep writing helpful content, improve my design craft, and impact people through meaningful ideas.</p>
+        </article>
       </div>
     </section>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        <span lang="om">Ani Maqaanko Roobeeraa Malkaan Jedhama. Yuunivarsiitii Jimmaatti Barataa Muummee Faarmaasii Waggaa 3ffaati.</span>
-      </p>
+    <section class="panel" id="blog">
+      <div class="panel-head">
+        <h2>Blog Posts About Me</h2>
+        <p>Personal reflections, lessons, and faith notes.</p>
+      </div>
+
+      <div class="grid cards-3 blog-grid">
+        <article class="blog-post">
+          <div class="post-graphic graphic-a" aria-hidden="true"></div>
+          <h3>How I am Learning to Love God Truly</h3>
+          <p>A personal reflection on faith, obedience, and growth in daily life.</p>
+          <a href="post1.html" class="btn btn-small">Open Demo Post</a>
+        </article>
+
+        <article class="blog-post">
+          <div class="post-graphic graphic-b" aria-hidden="true"></div>
+          <h3>From Campus Pressure to Clear Purpose</h3>
+          <p>A story about balancing academics, identity, and consistent habits.</p>
+          <a href="#" class="btn btn-small btn-disabled" aria-disabled="true">Draft</a>
+        </article>
+
+        <article class="blog-post">
+          <div class="post-graphic graphic-c" aria-hidden="true"></div>
+          <h3>Why I Started Sharing Online</h3>
+          <p>Thoughts on media responsibility and speaking with clarity.</p>
+          <a href="#" class="btn btn-small btn-disabled" aria-disabled="true">Draft</a>
+        </article>
+      </div>
     </section>
 
-   <!-- Blog Section -->
-<section id="blog">
-    <h2>Latest Blog Posts</h2>
-    <div class="blog-container">
-        <article class="blog-post">
-            <div class="post-thumb" style="background-image:url('https://via.placeholder.com/600x300?text=Landing+Page');"></div>
-            <h3>Dhugaadhaan Waaqayyoon Jaallachuu.</h3>
-            <p>Baay'een keenya Waaqayyoon caalaa ofii keenya akkasumas biyya lafaa jaallachuu keenyaan, karaa mataa keenyaa irra buunee kufaatii jireenya hafuuraa dhandhamanneerra, muraasni keenyammo ammayyuu keessa jirra...</p>
-            <a href="./post1.html" class="btn read-more">Read More</a>
-        </article>
-        <article class="blog-post">
-            <div class="post-thumb" style="background-image:url('https://via.placeholder.com/600x300?text=Grace+Gift');"></div>
-            <h3>Kennaa Waaqayyootti boqodhaa!</h3>
-            <p>"Waaqayyo, akkasitti tokkicha ilma isaa hamma kennuufitti biyya lafaa jaallate..." (Yohaannis 3:16)...</p>
-            <a href="./post2.html" class="btn read-more">Read More</a>
-        </article>
-    </div>
-</section>
-
-
-    <!-- Telegram Section -->
-<section id="telegram">
-  <div class="telegram-container">
-    <h2>Contact Me on Telegram</h2>
-    <p>Click to message me directly or join my channel.</p>
-
-    <a href="https://t.me/Believe_In_Christ79" target="_blank" rel="noopener noreferrer" class="telegram-btn">
-      <span class="icon-animation"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram"></span>
-      Message Me
-    </a>
-
-    <a href="https://t.me/Gosp22" target="_blank" rel="noopener noreferrer" class="telegram-btn">
-      <span class="icon-animation"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram"></span>
-      Join My Channel
-    </a>
-  </div>
-</section>
-
-    <section id="contact">
-      <h2><span class="heading-icon">ðŸ“§</span> Get in Touch</h2>
-
-      <div class="contact-card">
-        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="13729cdc-12b6-450c-bf5d-e21b92717df8">
-          <input type="text" name="name" placeholder="Your name" required>
-          <input type="email" name="email" placeholder="Your email address" required>
-          <textarea name="message" placeholder="Write your message here" required></textarea>
-          <button type="submit" class="btn form-btn">Send <span class="icon">âž¤</span></button>
-        </form>
+    <section class="panel contact" id="contact">
+      <h2>Contact</h2>
+      <p>If you want to collaborate or chat, reach out on Telegram.</p>
+      <div class="contact-links">
+        <a href="https://t.me/Believe_In_Christ79" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Message Me</a>
+        <a href="https://t.me/Gosp22" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Join Channel</a>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>Â© 2026 Robera. All rights reserved.</p>
+    <p>Copyright 2026 Robera. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
