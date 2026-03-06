@@ -179,7 +179,7 @@ footer {
   border-radius: 16px;
   border: 1px solid rgba(167, 220, 241, 0.35);
   background: linear-gradient(160deg, rgba(7, 33, 46, 0.86), rgba(8, 19, 30, 0.95));
-  z-index: -1;
+  z-index: 1;
 }
 
 .profile-photo {
@@ -191,6 +191,7 @@ footer {
   border-radius: 16px;
   display: block;
   filter: saturate(1.05) contrast(1.03);
+  z-index: 2;
 }
 
 .badge {
@@ -203,6 +204,7 @@ footer {
   background: rgba(5, 18, 28, 0.72);
   padding: 5px 10px;
   animation: floaty 3.6s ease-in-out infinite;
+  z-index: 3;
 }
 
 .badge-a {
