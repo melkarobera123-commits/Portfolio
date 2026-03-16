@@ -3,7 +3,9 @@ const applyImageFallback = (img) => {
   if (img.dataset.fallbackApplied === "1") return;
   img.dataset.fallbackApplied = "1";
   img.src = "images/placeholder.svg";
-  img.alt = "Image unavailable";
+  if (!img.alt) {
+    img.alt = "Apothecaries Journal image placeholder";
+  }
 };
 
 document.addEventListener("error", (e) => {
