@@ -1,101 +1,127 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Simple personal landing page for Robera.">
-  <title>Robera | Simple Profile</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Apothecaries Journal explores the science, history, and future of medicine.">
+<title>Apothecaries Blog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script>
+  // Handle image errors immediately (before body loads)
+  document.addEventListener("error", (e) => {
+    if (e.target.tagName.toLowerCase() === "img") {
+      e.target.src = "https://placehold.co/600x400?text=Image+Unavailable";
+      e.target.alt = "Image unavailable";
+    }
+  }, true);
+</script>
 </head>
 <body>
-  <div class="bg-orb orb-1" aria-hidden="true"></div>
-  <div class="bg-orb orb-2" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="reading-progress" aria-hidden="true"><span></span></div>
 
-  <header class="site-header" id="top">
-    <nav class="navbar" aria-label="Main navigation">
-      <a href="#top" class="brand">Robera</a>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+<header class="navbar">
+  <div class="logo">Apothecaries Journal</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="articles.html">Articles</a>
+    <a href="topics.html">Topics</a>
+    <a href="about.html">About</a>
+  </nav>
+  <button id="darkToggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">🌙</button>
+</header>
 
-    <section class="hero" id="about">
-      <div class="hero-copy">
-        <p class="hero-tag">PHARMACY | FAITH | TECH</p>
-        <h1>Hi, I am Robera Melka.</h1>
-        <p class="hero-intro">Pharmacy student, Christian creator, and tech learner. I keep life simple: learn, serve, and smile.</p>
-        <div class="hero-actions">
-          <a href="#blog" class="btn btn-primary">Read Post</a>
-          <a href="#contact" class="btn btn-ghost">Contact</a>
-        </div>
+<div class="issue-bar">
+  <span>Issue 04</span>
+  <div>Modern pharmacy, timeless craft</div>
+</div>
+
+<main id="main">
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-label">Apothecaries Journal</p>
+      <h1>Apothecaries</h1>
+      <p>Exploring the science, history, and future of medicine</p>
+      <div class="hero-actions">
+        <a class="pill" href="articles.html">Browse Articles</a>
+        <a class="pill pill-ghost" href="topics.html">Explore Topics</a>
       </div>
+    </div>
+  </section>
 
-      <aside class="hero-profile" aria-label="Profile photo and quick facts">
-        <div class="photo-wrap">
-          <img src="./profile.jpg?v=20260306" alt="Profile photo of Robera Melka" class="profile-photo" loading="eager" decoding="async" onerror="this.onerror=null;this.src='./profile-placeholder.svg';">
-        </div>
-        <div class="hero-card">
-          <h2>Quick Facts</h2>
-          <ul>
-            <li><span>Field:</span> Pharmacy Student (Year 3)</li>
-            <li><span>Focus:</span> Faith + Tech + Communication</li>
-            <li><span>Base:</span> Jimma University</li>
-          </ul>
-        </div>
-      </aside>
-    </section>
-  </header>
+  <section class="search">
+    <label class="sr-only" for="searchBar">Search articles</label>
+    <input id="searchBar" type="text" placeholder="Search pharmacy topics...">
+  </section>
 
-  <main>
-    <section class="panel" id="skills">
-      <h2>What I Do</h2>
-      <div class="grid cards-3">
-        <article class="card">
-          <h3>Pharmacy</h3>
-          <p>Study and practical learning.</p>
-        </article>
-        <article class="card">
-          <h3>Faith</h3>
-          <p>Prayer, discipline, and purpose.</p>
-        </article>
-        <article class="card">
-          <h3>Technology</h3>
-          <p>Simple websites and digital communication.</p>
-        </article>
-      </div>
-    </section>
+  <section class="posts">
+    <div class="section-header reveal">
+      <h2>Latest Articles</h2>
+      <p>Fresh perspectives from the frontiers of pharmacy and care.</p>
+    </div>
+    <div class="post reveal">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pestle%20and%20mortar.jpg" alt="Mortar and pestle used in traditional medicine" loading="lazy">
+      <h3>The Story of Aspirin</h3>
+      <p>How willow bark became the world's most famous medicine.</p>
+      <a href="post1.html">Read More</a>
+    </div>
 
-    <section class="panel" id="blog">
-      <div class="panel-head">
-        <h2>Blog</h2>
-        <p>One short reflection for now.</p>
-      </div>
-      <div class="grid cards-3 blog-grid">
-        <article class="blog-post">
-          <div class="post-graphic graphic-a" aria-hidden="true">
-            <span class="graphic-chip">Post</span>
-          </div>
-          <h3>How I am Learning to Love God Truly</h3>
-          <p>A short personal reflection from student life.</p>
-          <a href="post1.html" class="btn btn-small">Open Post</a>
-        </article>
-      </div>
-    </section>
+    <div class="post reveal">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Penicillium%20glabrum%20conidiophores.jpg" alt="Penicillium conidiophores under a microscope" loading="lazy">
+      <h3>Penicillin Discovery</h3>
+      <p>The accidental discovery that changed medicine forever.</p>
+      <a href="post2.html">Read More</a>
+    </div>
 
-    <section class="panel contact" id="contact">
-      <h2>Contact</h2>
-      <div class="contact-links">
-        <a href="https://t.me/Believe_In_Christ79" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Message Me</a>
-        <a href="https://t.me/Gosp22" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Join Channel</a>
-      </div>
-    </section>
-  </main>
+    <div class="post reveal">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Vaccination.jpg" alt="Healthcare worker administering a vaccine" loading="lazy">
+      <h3>How Vaccines Work</h3>
+      <p>Training the immune system to fight disease.</p>
+      <a href="post3.html">Read More</a>
+    </div>
 
-  <footer>
-    <p>Copyright 2026 Robera.</p>
-  </footer>
+    <div class="post reveal">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Apothecary%20Shop,%20Interior%202.jpg" alt="Historic apothecary shop interior" loading="lazy">
+      <h3>Pharmacy Myths and Facts</h3>
+      <p>Separating evidence from misinformation in everyday care.</p>
+      <a href="post4.html">Read More</a>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <h2>Join the Apothecaries Circle</h2>
+    <p class="newsletter-note">Monthly dispatches on science, history, and the future of medicine.</p>
+    <form class="newsletter-form" action="#" method="post">
+      <label class="sr-only" for="newsletter-name">Name</label>
+      <input id="newsletter-name" name="name" type="text" placeholder="Your name" autocomplete="name">
+      <label class="sr-only" for="newsletter-email">Email</label>
+      <input id="newsletter-email" name="email" type="email" placeholder="Your email address" autocomplete="email" aria-describedby="newsletter-privacy" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p class="newsletter-privacy" id="newsletter-privacy">No spam. Unsubscribe anytime.</p>
+  </section>
+
+  <section class="support-strip">
+    <p style="margin-bottom: 16px; color: #6b5a4a;">Find value in our research? Help keep the journal independent.</p>
+    <a href="#" class="btn-donate">☕ Support the Journal</a>
+  </section>
+</main>
+
+<footer>
+  <div>
+    <p>© 2026 Apothecaries Blog</p>
+    <p class="developer-credit">Developed by Robera Melka Negasa</p>
+  </div>
+  <div class="footer-links">
+    <a href="credits.html" class="footer-link">Image Credits</a>
+    <a href="#" class="footer-link">Back to Top</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="molecules.js"></script>
 </body>
 </html>
